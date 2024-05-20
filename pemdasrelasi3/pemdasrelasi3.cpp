@@ -10,14 +10,24 @@ int main()
 {
     ibu* varibu = new ibu("dini");
     ibu* varibu2 = new ibu("novi");
-    anak* varibuanak1 = new anak("tono");
-    anak* varibuanak2 = new anak("rini");
-    anak* varibuanak3 = new anak("dewi");
+    anak* varanak1 = new anak("tono");
+    anak* varanak2 = new anak("rini");
+    anak* varanak3 = new anak("dewi");
 
-    varibu->tambahanak(varibuanak1);
-    varibu->tambahanak(varibuanak2);
-    varibu->tambahanak(varibuanak3);
-    varibu->tambahanak(varibuanak1);
+    varibu->tambahanak(varanak1);
+    varibu->tambahanak(varanak2);
+    varibu2->tambahanak(varanak3);
+    varibu2->tambahanak(varanak1);
     
+    varibu->cetakanak();
+    varibu2->cetakanak();
+
+    delete varibu;
+    delete varibu2;
+    delete varanak1;
+    delete varanak2;
+    delete varanak3;
+
+    return 0;
 }
 
