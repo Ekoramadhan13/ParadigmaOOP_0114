@@ -1,17 +1,17 @@
-#ifndef JANTUNG_H
-#define JANTUNG_H
+#ifndef MANUSIA_H
+#define MANUSIA_H
 using namespace std;
 
-class manusia {
+class Manusia {
 public:
 	string name;
 	jantung varjantung;
 
-	manusia(string pName)
+	Manusia(string pName)
 		:name(pName) {
 		cout << name << "hidup\n";
 	}
-	~manusia() {
+	~Manusia() {
 		cout << name << "mati\n";
 	}
 };

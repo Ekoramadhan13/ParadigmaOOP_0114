@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 #include "Header.h"
@@ -6,6 +8,8 @@ using namespace std;
 
 int main()
 {
-    
+    Manusia* varmanusia = new Manusia("jono");
+    delete varmanusia;
+    return 0;
 }
 
